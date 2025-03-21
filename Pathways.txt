@@ -1,0 +1,9 @@
+03/2/2025
+
+
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser
+We changed restricted to  RemoteSigned we can revert as below 
+
+Set-ExecutionPolicy Restricted -Scope CurrentUser
+
+
