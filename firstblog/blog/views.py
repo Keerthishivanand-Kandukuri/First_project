@@ -6,7 +6,7 @@ from .models import Post
 def home(request):
 
     posts= Post.objects.all()
-    return render(request, 'blog/base.html', {'posts':posts}) 
+    return render(request, 'firstblog/blog/base.html', {'posts':posts}) 
 
 def create_post(request):
     if request.method == 'POST':
@@ -18,7 +18,7 @@ def create_post(request):
         
         # Redirect to homepage or any desired page
         return redirect('home')
-    return render(request, 'blog/add_post.html')
+    return render(request, 'firstblog/blog/add_post.html')
 
 def delete_post(request, post_id) :
     if request.method == 'POST':
@@ -27,4 +27,4 @@ def delete_post(request, post_id) :
         return redirect('home')
     print( 'in post', request.method, get_object_or_404(Post, id=post_id) )
     posts= Post.objects.all()
-    return render(request, 'blog/base.html', {'posts':posts}) 
+    return render(request, 'firstblog/blog/base.html', {'posts':posts}) 
