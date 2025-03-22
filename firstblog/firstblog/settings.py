@@ -25,7 +25,7 @@ TEMPLATES_DIR = path.join(DIR_temp, 'firstblog')
 SECRET_KEY = 'django-insecure-d%=fy@y04$p)_-g8v@)f*+g-(e0e0ru70_8+v&%5wbecz_nau-'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG =  False
+DEBUG =  True
 
 ALLOWED_HOSTS = ['*']
 
@@ -70,7 +70,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = 'firstblog.wsgi.application'
+WSGI_APPLICATION = 'firstblog.firstblog.wsgi.application'
 
 
 # Database
