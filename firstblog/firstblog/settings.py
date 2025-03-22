@@ -16,7 +16,7 @@ from os import path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
-TEMPLATES_DIR = path.join(BASE_DIR, 'firstblog', 'templates')
+TEMPLATES_DIR = path.join(BASE_DIR , 'templates')
 print( BASE_DIR , TEMPLATES_DIR)
 
 # Quick-start development settings - unsuitable for production
