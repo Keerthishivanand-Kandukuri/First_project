@@ -20,7 +20,7 @@ from firstblog.blog import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('home/', views.home ,name='home'),
+    path('', views.home ,name='home'),
     path('create_post/', views.create_post, name='create_post'),
     path('delete_post/<int:post_id>/', views.delete_post, name='delete_post'),
     
